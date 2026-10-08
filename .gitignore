@@ -1,0 +1,33 @@
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+
+# Python / Backend
+backend/__pycache__/
+backend/*/__pycache__/
+backend/**/__pycache__/
+backend/.env
+backend/.venv/
+backend/env/
+backend/venv/
+backend/ENV/
+backend/generated_certificates/*.pdf
+!backend/generated_certificates/.gitkeep
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.log
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

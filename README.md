@@ -8,7 +8,7 @@ A full-stack application for generating personalized PDF certificates in bulk.
 |---|---|
 | Frontend | React + Vite + Tailwind CSS + Axios + Lucide React |
 | Backend | FastAPI + SQLAlchemy + PostgreSQL + ReportLab |
-| Database | PostgreSQL |
+| Database | cloud PostgreSQL | 
 | PDF Generation | ReportLab |
 
 ---
@@ -279,51 +279,20 @@ The database stores information about certificate generation jobs and individual
 
 The Results page periodically polls the backend to display the latest job status.
 
-Example:
 
-| Status | Meaning |
-|---|---|
-| `PENDING` | Job has been created but processing has not started |
-| `PROCESSING` | Certificates are currently being generated |
-| `COMPLETED` | All certificates have been processed |
-| `FAILED` | Job processing failed |
 
----
-
-## Features
-
-- Bulk certificate generation
-- CSV recipient upload
-- Personalized recipient names
-- Unique certificate IDs
-- PDF certificate generation
-- Multiple certificate types
-- PostgreSQL database storage
-- Background certificate processing
-- Real-time generation progress
-- Success and failure tracking
-- Individual PDF downloads
-- REST API architecture
-- Responsive React frontend
-- FastAPI backend
-- ReportLab PDF generation
-
----
-
+just open the github repository and clone the project create .env file in backend folder and run the frontend and backend.
 ## Environment Variables
 
 Create a `.env` file inside the `backend` directory:
 
-```env
-DATABASE_URL=postgresql://username:password@localhost:5432/cerificatedb
+
+DATABASE_URL=postgresql://neondb_owner:npg_xK3NGYOzp8Wl@ep-blue-frost-b5n0gr4i.c-7.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require
 CERTIFICATES_DIR=generated_certificates
-```
 
-Replace `username` and `password` with your PostgreSQL credentials.
+save the file
 
-**Do not commit the `.env` file to GitHub.**
-
----
+ run frontend and backend.
 
 ## Running the Application
 
